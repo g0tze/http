@@ -315,7 +315,7 @@ def main():
 	thread_num = int(input("> Threads:"))
 	N = str(input("> Do you need to get socks5 list?(y/n):"))
 	if N == 'y':
-		r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5")
+		r = requests.get("http://151.139.71.32/socks.txt")
 		with open("socks.txt",'wb') as f:
 			f.write(r.content)
 			print("\r\n [!] Have already download socks5 list as socks.txt\r\n")
